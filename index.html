@@ -30,7 +30,7 @@
     <title>Assignment3</title>
 </head>
 
-<body class="mx-auto px-10 py-4">
+<body class="max-w-7xl py-4 px-10 mx-auto">
     <!-- header section  -->
     <header>
         <!-- navbar  -->
@@ -73,38 +73,51 @@
             </div>
         </div>
         <!-- banner  -->
-        <div class="carousel rounded-md w-full">
-            <!-- card one  -->
-            <div id="slide1" class="carousel-item relative w-full  h-[50vh]">
-                <img src="./Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+        <div class="relative">
+            <div class="relative carousel rounded-md w-full">
+                <!-- card one  -->
+                <div id="slide1" class="carousel-item relative w-full  h-[50vh]">
+                    <img src="./Images/1.png" class="bg-center bg-cover w-full" />
+                    <div class="absolute  transform -translate-y-1/2 left-10 bottom-10 space-x-4">
+                        <a href="#slide4" class="btn bg-black text-white btn-circle">❮</a>
+                        <a href="#slide2" class="btn  bg-black text-white btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- card two  -->
+                <div id="slide2" class="carousel-item relative w-full  h-[50vh]">
+                    <img src="./Images/banner2.png" class="bg-center bg-cover w-full" />
+                    <div class="absolute  transform -translate-y-1/2 left-10 bottom-10 space-x-4">
+                        <a href="#slide1" class="btn bg-black text-white btn-circle">❮</a>
+                        <a href="#slide3" class="btn  bg-black text-white btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- card three  -->
+                <div id="slide3" class="carousel-item relative w-full h-[50vh]">
+                    <img src="./Images/banner3.png" class="bg-center bg-cover w-full" />
+                    <div class="absolute  transform -translate-y-1/2 left-10 bottom-10 space-x-4">
+                        <a href="#slide2" class="btn bg-black text-white btn-circle">❮</a>
+                        <a href="#slide4" class="btn  bg-black text-white btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- card four -->
+                <div id="slide4" class="carousel-item relative w-full h-[50vh]">
+                    <img src="./Images/banner4.png" class="bg-center bg-cover w-full" />
+                    <div class="absolute  transform -translate-y-1/2 left-10 bottom-10 space-x-4">
+                        <a href="#slide3" class="btn bg-black text-white btn-circle">❮</a>
+                        <a href="#slide1" class="btn  bg-black text-white btn-circle">❯</a>
+                    </div>
                 </div>
             </div>
-            <!-- card two  -->
-            <div id="slide2" class="carousel-item relative w-full  h-[50vh]">
-                <img src="./Images/banner2.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <!-- card three  -->
-            <div id="slide3" class="carousel-item relative w-full h-[50vh]">
-                <img src="./Images/banner3.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <!-- card four -->
-            <div id="slide4" class="carousel-item relative w-full h-[50vh]">
-                <img src="./Images/banner4.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
+            <div
+                class="absolute flex flex-col items-start justify-center bg-black rounded-md max-w-xl max-h-full lg:translate-x-3/4 lg:-translate-y-48 lg:mx-36">
+                <h2 class="text-white px-4 my-2 ms-8 text-2xl font-extrabold">
+                    Meet all the heroes from the field
+                </h2>
+                <p class="text-white ms-8 font-semibold px-4 py-5 text-[rgba(255, 255, 255, 0.10)]">You can know our all
+                    heros to
+                    explore here and you can enjoy with in this
+                    field.
+                    If you are interst let us know we will help you to our best. So, don't be affraid </p>
             </div>
         </div>
     </header>
